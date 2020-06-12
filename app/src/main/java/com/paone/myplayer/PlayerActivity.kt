@@ -1,7 +1,10 @@
 package com.paone.myplayer
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -30,5 +33,20 @@ class PlayerActivity : AppCompatActivity() {
 
         recycler.layoutManager =GridLayoutManager(applicationContext,3)
         recycler.adapter = adapter
+
+    }
+    var exit = false
+    override fun onBackPressed(){
+        if(exit){
+            finish()
+        }
+        else{
+            Toast.makeText(this, "Press Back again to Exit.",
+                Toast.LENGTH_SHORT).show()
+            exit=true
+            Handler().postDelayed(Runnable {
+                kotlin.run { exit=false }
+            }, 3000)
+        }
     }
 }
