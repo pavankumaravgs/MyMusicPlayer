@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/player"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D0E1572C">
+
+    <ImageView
+        android:id="@+id/cover_player"
+        android:layout_width="311dp"
+        android:layout_height="418dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        app:srcCompat="@mipmap/cover_art"
+        android:contentDescription="@string/todo" />
+
+    <ImageButton
+        android:id="@+id/pause_player"
+        android:layout_width="94dp"
+        android:layout_height="93dp"
+        android:layout_below="@id/cover_player"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="83dp"
+        android:background="@mipmap/baseline_pause_black_48"
+        android:backgroundTint="#C51162"
+        android:tint="#2B2B2B"
+        android:contentDescription="@string/todo" />
+</RelativeLayout>

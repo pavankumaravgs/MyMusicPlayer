@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyPlayer</string>
+    <string name="play_high_go_high">Play High Go High</string>
+    <string name="music_player">Music Player</string>
+    <string name="song_title">Song Title</string>
+    <string name="todo">TODO</string>
+</resources>
